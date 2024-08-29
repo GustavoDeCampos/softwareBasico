@@ -4,7 +4,6 @@ int funcVet(int vetor[], int tamanho){
     int i, j = 0;
     int repetidos = 0;
 
-
     for (i = 0; i < tamanho; i++){
         int atual = vetor[i];
         for (j = i + 1; j < tamanho; j++){
