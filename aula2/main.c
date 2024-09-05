@@ -10,6 +10,7 @@ int funcVet(int vetor[], int tamanho){
             int possivelRepetido = vetor[j];
             if (atual == possivelRepetido){
                 repetidos++;
+                break;
             }
         }
     }
@@ -17,7 +18,7 @@ int funcVet(int vetor[], int tamanho){
 }    
 
 int main(){
-    int vetor[] = {4, 2, 3, 4, 5, 3, 5, 7, 2, 8};
+    int vetor[] = {4, 4, 4};
     int tamanho = sizeof(vetor)/sizeof(vetor[0]);
 
     int resultado = funcVet(vetor, tamanho);
